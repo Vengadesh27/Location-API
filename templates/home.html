@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Make Own - PDF Services</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0e0e0e;
+            color: #e0e0e0;
+        }
+        .navbar {
+            background-color: transparent;
+        }
+        .btn-gradient {
+            background: transparent;
+            border: 2px solid #5e5e5e;
+            border-radius: 8px;
+            color: white;
+            padding: 10px 20px;
+        }
+        .card {
+            background-color: #1c1c1c;
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 8px rgba(255, 0, 128, 0.3), 
+                        0 8px 8px rgba(0, 255, 128, 0.3), 
+                        0 4px 8px rgba(0, 128, 255, 0.3);
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .search-bar {
+            margin-top: 20px;
+        }
+        .icon-animate {
+            font-size: 50px;
+            transition: transform 0.3s;
+            margin-bottom: 15px;
+        }
+        .icon-animate:hover {
+            transform: scale(1.1);
+        }
+        /* Expanded color options */
+        .icon-color-1 { color: #ff0080; } /* Pink */
+        .icon-color-2 { color: #ff8c00; } /* Orange */
+        .icon-color-3 { color: #00bfff; } /* Blue */
+        .icon-color-4 { color: #8e44ad; } /* Purple */
+        .icon-color-5 { color: #2ecc71; } /* Green */
+        .icon-color-6 { color: #f1c40f; } /* Yellow */
+        .icon-color-7 { color: #ff4500; } /* Red */
+        .icon-color-8 { color: #1abc9c; } /* Turquoise */
+        .icon-color-9 { color: #3498db; } /* Light Blue */
+        .icon-color-10 { color: #e74c3c; } /* Crimson */
+        .icon-color-11 { color: #9b59b6; } /* Violet */
+        .icon-color-12 { color: #16a085; } /* Sea Green */
+
+        .animated-image {
+        display: block;
+        margin: 20px auto;
+        height: 245px;
+        transform: rotate(-25deg);
+        animation: rotateScale 3s ease-in-out infinite; /* Animation property */
+    }
+
+    @keyframes rotateScale {
+        0% {
+            transform: rotate(-25deg) scale(1); /* Initial state */
+        }
+        50% {
+            transform: rotate(0deg) scale(1.1); /* Scale up and rotate */
+        }
+        100% {
+            transform: rotate(-25deg) scale(1); /* Return to initial state */
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+        <a class="navbar-brand" href="#">Make Own</a>
+        <div class="ml-auto">
+            <button class="btn btn-gradient">API</button>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+
+        <img src="../static/images/pdf.webp" alt="" class="animated-image">
+        <h1 class="text-center">Every tool you need to work with PDFs in one place</h1>
+        <p class="text-center">Every tool you need to use PDFs, at your fingertips. All are 100% FREE and easy to use! Merge, split, compress, convert, rotate, unlock and watermark PDFs with just a few clicks.</p>
+
+        <div class="search-bar text-center">
+            <input type="text" class="form-control" id="searchInput" placeholder="Search for PDF services..." style="width: 50%; margin: auto;">
+        </div>
+
+        <div class="row mt-4" id="serviceCards">
+            <div class="col-md-3 service-card">
+                <div class="card text-center mt-3">
+                    <div class="card-body">
+                        <i class="fas fa-file-pdf icon-animate"></i>
+                        <h5 class="card-title">Create PDF</h5>
+                        <p class="card-text">Easily create PDFs from various formats.</p>
+                        <a href="#" class="btn btn-gradient">Try Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 service-card">
+                <div class="card text-center mt-3">
+                    <div class="card-body">
+                        <i class="fas fa-compress icon-animate"></i>
+                        <h5 class="card-title">Compress PDF</h5>
+                        <p class="card-text">Reduce PDF file sizes without losing quality.</p>
+                        <a href="#" class="btn btn-gradient">Try Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 service-card">
+                <div class="card text-center mt-3">
+                    <div class="card-body">
+                        <i class="fas fa-file-alt icon-animate"></i>
+                        <h5 class="card-title">Merge PDF</h5>
+                        <p class="card-text">Combine multiple PDFs into one file.</p>
+                        <a href="#" class="btn btn-gradient">Try Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 service-card">
+                <div class="card text-center mt-3">
+                    <div class="card-body">
+                        <i class="fas fa-file-split icon-animate"></i>
+                        <h5 class="card-title">Split PDF</h5>
+                        <p class="card-text">Separate one PDF into multiple files.</p>
+                        <a href="#" class="btn btn-gradient">Try Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 service-card">
+                <div class="card text-center mt-3">
+                    <div class="card-body">
+                        <i class="fas fa-sync-alt icon-animate"></i>
+                        <h5 class="card-title">Rotate PDF</h5>
+                        <p class="card-text">Rotate PDF pages with ease.</p>
+                        <a href="#" class="btn btn-gradient">Try Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 service-card">
+                <div class="card text-center mt-3">
+                    <div class="card-body">
+                        <i class="fas fa-unlock-alt icon-animate"></i>
+                        <h5 class="card-title">Unlock PDF</h5>
+                        <p class="card-text">Unlock password-protected PDF files.</p>
+                        <a href="#" class="btn btn-gradient">Try Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 service-card">
+                <div class="card text-center mt-3">
+                    <div class="card-body">
+                        <i class="fas fa-water icon-animate"></i>
+                        <h5 class="card-title">Watermark PDF</h5>
+                        <p class="card-text">Add watermark to your PDFs.</p>
+                        <a href="#" class="btn btn-gradient">Try Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more services if necessary -->
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var colors = [
+                'icon-color-1', 'icon-color-2', 'icon-color-3', 
+                'icon-color-4', 'icon-color-5', 'icon-color-6',
+                'icon-color-7', 'icon-color-8', 'icon-color-9',
+                'icon-color-10', 'icon-color-11', 'icon-color-12'
+            ];
+
+            // Assign random colors initially
+            function assignRandomColors() {
+                $('.icon-animate').each(function() {
+                    var randomColor = colors[Math.floor(Math.random() * colors.length)];
+                    $(this).removeClass(colors.join(' ')); // Remove all color classes
+                    $(this).addClass(randomColor); // Add a new random color
+                });
+            }
+
+            // Change icon colors every 2 seconds
+            setInterval(assignRandomColors, 4000);
+
+            // Initial random color assignment
+            assignRandomColors();
+
+            // Search filter functionality
+            $('#searchInput').on('keyup', function() {
+                var value = $(this).val().toLowerCase();
+                $('#serviceCards .service-card').filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+</body>
+</html>
