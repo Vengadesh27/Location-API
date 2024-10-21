@@ -1,0 +1,221 @@
+@keyframes waveBackground {
+    0% {
+        background-position: 0% 0%;
+        background: radial-gradient(circle, rgba(0, 10, 30, 1) 0%, rgba(0, 0, 0, 1) 100%); /* Darker blue */
+    }
+    20% {
+        background-position: 50% 50%;
+        background: radial-gradient(circle, rgba(0, 20, 50, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    }
+    40% {
+        background-position: 100% 0%;
+        background: radial-gradient(circle, rgba(0, 30, 70, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    }
+    60% {
+        background-position: 50% 100%;
+        background: radial-gradient(circle, rgba(0, 40, 90, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    }
+    80% {
+        background-position: 0% 50%;
+        background: radial-gradient(circle, rgba(0, 50, 110, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    }
+    100% {
+        background-position: 0% 0%;
+        background: radial-gradient(circle, rgba(0, 10, 30, 1) 0%, rgba(0, 0, 0, 1) 100%); /* Darker blue */
+    }
+}
+
+body {
+    background: radial-gradient(circle, rgba(0, 10, 30, 1) 0%, rgba(0, 0, 0, 1) 100%); /* Dark blue to black */
+    background-size: 200% 200%; /* Adjusted size for smoother animation */
+    animation: waveBackground 15s ease-in-out infinite; /* Use the new wave animation */
+    color: #e0e0e0;
+}
+
+
+
+.navbar {
+    background-color: transparent;
+}
+
+.btn-gradient {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Glassmorphism effect for the cards */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.search-bar {
+    margin-top: 20px;
+}
+
+/* Glassmorphism style for the search bar and contact fields */
+/* Glassmorphism style for the search bar and contact fields */
+/* Glassmorphism style for the search bar and contact fields */
+.search-bar input, 
+.contact-section input, 
+.contact-section textarea {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    color: white; /* Text color set to white */
+    padding: 15px;
+    font-size: 16px;
+    width: 60%; /* Reduced width */
+    margin: auto;
+    backdrop-filter: blur(15px);
+    transition: all 0.3s;
+}
+
+.search-bar input::placeholder, 
+.contact-section input::placeholder,
+.contact-section textarea::placeholder {
+    color: #e0e0e0; /* Placeholder color */
+}
+
+.search-bar input:focus,
+.contact-section input:focus,
+.contact-section textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px white;
+    background: rgba(255, 255, 255, 0.2); /* Keep the same background on focus */
+    color: white; /* Ensure text color stays white on focus */
+}
+
+
+/* Custom colors for card icons */
+.card-icon-create { color: #ff5733; } /* Red-Orange */
+.card-icon-compress { color: #3498db; } /* Light Blue */
+.card-icon-merge { color: #2ecc71; } /* Green */
+.card-icon-split { color: #f1c40f; } /* Yellow */
+.card-icon-rotate { color: #8e44ad; } /* Purple */
+.card-icon-unlock { color: #e74c3c; } /* Red */
+.card-icon-watermark { color: #1abc9c; } /* Teal */
+
+/* Icon animation */
+.icon-animate {
+    font-size: 50px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.icon-animate:hover {
+    transform: scale(1.2);
+}
+
+.contact-section {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+    backdrop-filter: blur(15px);
+}
+
+.why-choose-us {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(15px);
+    margin-top: 30px;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: space-around; /* Space out the items evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.benefit {
+    flex: 1; /* Allow benefits to grow equally */
+    margin: 20px; /* Space between benefits */
+    max-width: 200px; /* Set a max width for each benefit */
+}
+
+.benefit i {
+    font-size: 40px; /* Size of the icons */
+    color: #2ecc71; /* Icon color */
+    margin-bottom: 10px; /* Space between icon and title */
+}
+
+.benefit h5 {
+    margin: 10px 0; /* Space around title */
+    color: white; /* Title color */
+}
+
+.benefit p {
+    color: #e0e0e0; /* Description color */
+}
+
+
+.footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Social media links */
+.social-media {
+    margin-top: 15px;
+}
+
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.btn-send {
+    background-color: #2ecc71; /* Green */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+.btn-send:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}
+
+       /* Loading Overlay Styles */
+       .loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    .loading-icon {
+        font-size: 48px;
+        margin-right: 10px;
+        animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+
+    

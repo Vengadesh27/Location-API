@@ -1,0 +1,62 @@
+/* General Styles for Terms of Use Page */
+body {
+    background: radial-gradient(circle, rgba(0, 31, 63, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-size: 200% 200%;
+    animation: waveBackground 15s ease-in-out infinite; /* Background animation */
+    color: #e0e0e0; /* Text color */
+    font-family: Arial, sans-serif; /* Font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.terms-of-use-container {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;}
+
+.terms-of-use-content {
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphic effect */
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 80%; /* Responsive width */
+}
+
+h1, h2 {
+    color: white; /* Heading color */
+}
+
+p, ul {
+    color: #e0e0e0; /* Text color */
+}
+
+
+
+/* Link styles */
+a {
+    color: #2ecc71; /* Link color */
+    text-decoration: none; /* No underline for links */
+}
+
+
+/* Background Animation Keyframes */
+@keyframes waveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    25% {
+        background-position: 100% 100%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    75% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
